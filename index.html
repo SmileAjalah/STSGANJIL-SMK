@@ -45,35 +45,55 @@
     <div class="container mb-5">
         <hr border="2">
         <div class="row">
-            <div class="col-4"><img src="tas.jpg" alt="Tas" style="width: 500px;"></div>
-            <div class="col-8">
+            <div class="col-5 pt-5"><img src="tas.jpg" alt="Tas" style="width: 360px;"></div>
+            <div class="col-1"></div>
+            <div class="col-6">
                 <div class="row" style="margin-left: 60px;margin-top: 50px;">
-                    <div class="col-1"><i class="fa-solid fa-star fa-sm"></i></div>
-                    <div class="col-1" style="margin-left: -40px;"><i class="fa-solid fa-star fa-sm"></i></div>
-                    <div class="col-1" style="margin-left: -40px;"><i class="fa-solid fa-star fa-sm"></i></div>
-                    <div class="col-1" style="margin-left: -40px;"><i class="fa-solid fa-star fa-sm"></i></div>
-                    <div class="col-1" style="margin-left: -40px;"><i class="fa-solid fa-star fa-sm"></i></div>
+                        <div id="rateMe2"  class="empty-stars" style="margin-left: 15px;"></div>
                     <p class="text-secondary" style="font-size: small;margin-top: 2px;">10 Reviews</p>
                 </div>
                 <h2 style="margin-left: 75px;">Tech Style Bag Pack</h2>
                 <h5 class="text-secondary" style="margin-left: 75px;">$50,00</h5>
                 <p style="margin-left: 75px;margin-top: 40px;">Share This Product :</p>
-                <div class="row" style="margin-left: 60px;margin-top: -9px;">
-                    <div class="col-1"><i class="fa-solid fa-envelope" style="font-size: xx-large;"></i></div>
-                    <div class="col-1" style="margin-left: -13px;"><i class="fa-brands fa-facebook"
+                <!-- <div class="row" style="margin-left: 60px;margin-top: -9px;">
+                    <div class="col-3"><i class="fa-solid fa-envelope" style="font-size: xx-large;"></i></div>
+                    <div class="col-3" style="margin-left: -13px;"><i class="fa-brands fa-facebook"
                             style="font-size: xx-large;"></i></div>
-                    <div class="col-1" style="margin-left: -13px;"><i class="fa-solid fa-envelope"
+                    <div class="col-3" style="margin-left: -13px;"><i class="fa-solid fa-envelope"
                             style="font-size: xx-large;"></i></div>
-                    <div class="col-1" style="margin-left: -13px;"><i class="fa-brands fa-facebook"
+                    <div class="col-3" style="margin-left: -13px;"><i class="fa-brands fa-facebook"
                             style="font-size: xx-large;"></i></div>
+                </div> -->
+                <div class="row " style="width: 50%; margin-left: 13%;">
+                    <div class="col-3">
+                        <i class="fa-solid fa-envelope" style="font-size: xx-large;"></i>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa-brands fa-facebook" style="font-size: xx-large;"></i>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa-brands fa-instagram" style="font-size: xx-large;"></i>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa-brands fa-twitter" style="font-size: xx-large;"></i>
+                    </div>
                 </div>
                 <p style="margin-left: 75px;margin-top: 10px;">Rate This Product</p>
-                <div class="row" style="margin-left: 60px;margin-top: -9px;">
-                    <div class="col-1"><button class="bg-secondary"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="row " style="width: 25%; margin-left: 13%;">
+                    <!-- <div class="col-1"><button class="bg-secondary"><i class="fa-solid fa-chevron-left"></i></button>
                     </div>
                     <div class="col-1" style="margin-left: -33px;"><input type="number" style="width: 50px;"></div>
                     <div class="col-1" style="margin-left: -10px;"><button class="bg-secondary"><i
-                                class="fa-solid fa-chevron-right"></i></button></div>
+                                class="fa-solid fa-chevron-right"></i></button></div> -->
+                    <div class="col-4">
+                        <button><</button>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" style="width: 80px; margin-left: -20px;">
+                    </div>
+                    <div class="col-4">
+                        <button>></button>
+                    </div>
                 </div>
                 <div class="row" style="margin-left: 60px;margin-top: 50px;">
                     <div class="col-12"><button class="btn btn-secondary btn-outline-dark btn-block"><strong>Buy This
@@ -110,6 +130,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <script src="js/rating.min.js"></script>
 </body>
 
 </html>
+
+<script>
+    // Rating Initialization
+$(document).ready(function() {
+  $('#rateMe2').mdbRate();
+});
+</script>
