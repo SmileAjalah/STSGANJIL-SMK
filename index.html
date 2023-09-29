@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Hello, world!</title>
+    <title>Smart Shop</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Smarts</a>
+        <a class="navbar-brand" href="#"><img src="images/Smart_Logo.png" width="100px" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 1000px;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 950px;">
             <div class="dropdown">
                 <a class="dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
                     aria-expanded="false">
                     USD
                 </a>
             </div>
-            <div style="margin-left: 70px;">
-                Sign In | Sign Up
+            <div style="margin-left: 70px; ">
+                    <a href="#" style="text-decoration: none; color: #000;">Sign In</a> | <a href="#" style="text-decoration: none;color: #000;">Sign Up</a>
             </div>
         </div>
     </nav>
@@ -36,36 +36,58 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div style="margin-left: -19px;">Dashboard</div>
-            <div style="margin-left: 50px;">Product</div>
-            <div style="margin-left: 50px;">About Us</div>
-            <div style="margin-left: 50px;">Terms And Conditions</div>
+            <div style="margin-left: -19px;"><a href="#"  style="text-decoration: none; color:#FFFF"; >Dashboard</a></div>
+            <div style="margin-left: 50px;"><a href="#"  style="text-decoration: none; color:#FFFF"; >Product</a></div>
+            <div style="margin-left: 50px;"><a href="#"  style="text-decoration: none; color:#FFFF"; >About Us</a></div>
+            <div style="margin-left: 50px;"><a href="#"  style="text-decoration: none; color:#FFFF"; >Terms And Conditions</a></div>
         </div>
     </nav>
     <div class="container mb-5">
         <div class="row">
-            <div class="col-5 pt-5"><img src="bag.png" alt="Tas" style="width: 360px;"></div>
+            <div class="col-5 pt-5">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-interval="10000">
+                        <img src="images/Bag-front.jpg" alt="Tas" style="width: 360px;">
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                        <img src="images/Bag.png" alt="Tas" style="width: 360px;">
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                        <img src="images/Bag-load.png" alt="Tas" style="width: 360px;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </button>
+                  </div>
+            </div>
             <div class="col-1"></div>
             <div class="col-6">
                 <div class="row" style="margin-left: 60px;margin-top: 50px;">
                         <div id="rateMe2"  class="empty-stars" style="margin-left: 15px;"></div>
-                    <p class="text-secondary" style="font-size: small;margin-top: 2px;">10 Reviews</p>
+                    <a href="#"><p class="text-secondary" style="font-size: small;margin-top: 7px;">10 Reviews</p></a>
                 </div>
                 <h2 style="margin-left: 75px;">Tech Style Bag Pack</h2>
                 <h5 class="text-secondary" style="margin-left: 75px;">$50,00</h5>
                 <p style="margin-left: 75px;margin-top: 40px;">Share This Product :</p>
                 <div class="row " style="width: 50%; margin-left: 13%;">
                     <div class="col-3">
-                        <i class="fa-solid fa-envelope" style="font-size: xx-large;"></i>
+                        <a href="#" style="text-decoration: none; color: #000;"><i class="fa-solid fa-envelope" style="font-size: xx-large;"></i></a>
                     </div>
                     <div class="col-3">
-                        <i class="fa-brands fa-facebook" style="font-size: xx-large;"></i>
+                        <a href="" style="text-decoration: none;color: #000;"><i class="fa-brands fa-facebook" style="font-size: xx-large;"></i></a>
                     </div>
                     <div class="col-3">
-                        <i class="fa-brands fa-instagram" style="font-size: xx-large;"></i>
+                        <a href="" style="text-decoration: none;color: #000;"><i class="fa-brands fa-instagram" style="font-size: xx-large;"></i></a>
                     </div>
                     <div class="col-3">
-                        <i class="fa-brands fa-twitter" style="font-size: xx-large;"></i>
+                        <a href="" style="text-decoration: none;color: #000;"><i class="fa-brands fa-twitter" style="font-size: xx-large;"></i></a>
                     </div>
                 </div>
                 <p style="margin-left: 75px;margin-top: 10px;">Rate This Product</p>
@@ -81,7 +103,7 @@
                     </div>
                 </div>
                 <div class="row" style="margin-left: 60px;margin-top: 50px;">
-                    <div class="col-12"><button class="btn btn-secondary btn-outline-dark btn-block"><strong>Buy This
+                    <div class="col-8"><button class="btn btn-dark btn-outline-secondary btn-block"><strong>Buy This
                                 Product</strong></button></div>
                 </div>
             </div>
@@ -106,7 +128,7 @@
             ullamcorper in dolor sed ullamcorper. Duis in scelerisque metus.
         </p>
     </div>
-    <footer class="bg-secondary text-center">Copyleft@2023 - PT - Iotech Studio</footer>
+    <footer class="bg-secondary text-center">Copyleft@2023 - PT.Iotech Studio</footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
